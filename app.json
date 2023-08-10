@@ -1,0 +1,215 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.lrvdlinden.bright",
+  "version": "1.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "brandColor": "#2fcbfe",
+  "name": {
+    "en": "Bright.nl",
+    "nl": "Bright.nl"
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "description": {
+    "en": "Receive notifications for new articles from Bright.nl.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen van Bright.nl."
+  },
+  "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": [
+      "internet",
+      "news",
+      "nos",
+      "nu.nl",
+      "rss",
+      "bright"
+    ],
+    "nl": [
+      "internet",
+      "nieuws",
+      "nos",
+      "nu.nl",
+      "rss",
+      "bright"
+    ]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-bright-nl-for-homey/85905"
+  },
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-bright-nl-for-homey/85905",
+  "homeyCommunityTopicId": 85905,
+  "flow": {
+    "triggers": [
+      {
+        "id": "new_article",
+        "title": {
+          "en": "New Article Received",
+          "nl": "Nieuw artikel ontvangen",
+          "de": "Neuer Artikel erhalten",
+          "fr": "Nouvel article reçu",
+          "it": "Nuovo articolo ricevuto",
+          "sv": "Nytt artikel mottagen",
+          "no": "Ny artikkel mottatt",
+          "es": "Nuevo artículo recibido",
+          "da": "Ny artikel modtaget",
+          "ru": "Получена новая статья",
+          "pl": "Nowy artykuł otrzymany"
+        },
+        "description": {
+          "en": "Triggered when a new article is received from VI.",
+          "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van VI.",
+          "de": "Ausgelöst, wenn ein neuer Artikel von VI empfangen wird.",
+          "fr": "Déclenché lorsqu'un nouvel article est reçu de VI.",
+          "it": "Attivato quando viene ricevuto un nuovo articolo da VI.",
+          "sv": "Aktiveras när en ny artikel tas emot från VI.",
+          "no": "Utløst når en ny artikkel mottas fra VI.",
+          "es": "Activado cuando se recibe un nuevo artículo de VI.",
+          "da": "Udløst, når en ny artikel modtages fra VI.",
+          "ru": "Срабатывает, когда поступает новая статья от VI.",
+          "pl": "Wyzwalane, gdy zostanie odebrany nowy artykuł z VI."
+        },
+        "tokens": [
+          {
+            "name": "title",
+            "title": {
+              "en": "Article Title",
+              "nl": "Artikel Titel",
+              "de": "Artikel Titel",
+              "fr": "Titre de l'article",
+              "it": "Titolo dell'articolo",
+              "sv": "Artikeltitel",
+              "no": "Artikkel tittel",
+              "es": "Título del artículo",
+              "da": "Artikel titel",
+              "ru": "Заголовок статьи",
+              "pl": "Tytuł artykułu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "link",
+            "title": {
+              "en": "Article URL",
+              "nl": "Artikel URL",
+              "de": "Artikel-URL",
+              "fr": "URL de l'article",
+              "it": "URL dell'articolo",
+              "sv": "Artikel-URL",
+              "no": "Artikkel-URL",
+              "es": "URL del artículo",
+              "da": "Artikel-URL",
+              "ru": "URL статьи",
+              "pl": "URL artykułu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "title": {
+              "en": "Article Description",
+              "nl": "Artikel Omschrijving",
+              "de": "Artikelbeschreibung",
+              "fr": "Description de l'article",
+              "it": "Descrizione dell'articolo",
+              "sv": "Artikelbeskrivning",
+              "no": "Artikkelbeskrivelse",
+              "es": "Descripción del artículo",
+              "da": "Artikelbeskrivelse",
+              "ru": "Описание статьи",
+              "pl": "Opis artykułu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Article Publication Date",
+              "nl": "Artikel Publicatiedatum",
+              "de": "Artikel Veröffentlichungsdatum",
+              "fr": "Date de publication de l'article",
+              "it": "Data di pubblicazione dell'articolo",
+              "sv": "Artikel Publiceringsdatum",
+              "no": "Artikkel Publikasjonsdato",
+              "es": "Fecha de publicación del artículo",
+              "da": "Artikel Udgivelsesdato",
+              "ru": "Дата публикации статьи",
+              "pl": "Data publikacji artykułu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "imageUrl",
+            "title": {
+              "en": "Article Image URL",
+              "nl": "Artikel Afbeelding URL",
+              "de": "Artikelbild-URL",
+              "fr": "URL de l'image de l'article",
+              "it": "URL dell'immagine dell'articolo",
+              "sv": "Artikelbild-URL",
+              "no": "Artikkelbilde-URL",
+              "es": "URL de la imagen del artículo",
+              "da": "Artikel Billede URL",
+              "ru": "URL изображения статьи",
+              "pl": "URL obrazu artykułu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "image",
+            "title": {
+              "en": "Article Image",
+              "nl": "Artikel Afbeelding",
+              "de": "Artikelbild-URL",
+              "fr": "URL de l'image de l'article",
+              "it": "URL dell'immagine dell'articolo",
+              "sv": "Artikelbild-URL",
+              "no": "Artikkelbilde-URL",
+              "es": "URL de la imagen del artículo",
+              "da": "Artikel Billede URL",
+              "ru": "URL изображения статьи",
+              "pl": "URL obrazu artykułu"
+            },
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+}
