@@ -1,0 +1,77 @@
+{
+  "id": "nl.lrvdlinden.bright",
+  "version": "1.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "brandColor": "#2fcbfe",
+  "name": {
+    "en": "Bright.nl",
+    "nl": "Bright.nl"
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "description": {
+    "en": "Receive notifications for new articles from Bright.nl.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen van Bright.nl."
+  },
+  "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": [
+      "internet",
+      "news",
+      "nos",
+      "nu.nl",
+      "rss",
+      "bright"
+    ],
+    "nl": [
+      "internet",
+      "nieuws",
+      "nos",
+      "nu.nl",
+      "rss",
+      "bright"
+    ]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-bright-nl-for-homey/85905"
+  },
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-bright-nl-for-homey/85905",
+  "homeyCommunityTopicId": 85905
+}
